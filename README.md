@@ -11,6 +11,18 @@ Summary: A library for simplifying the process of climate model evaluation.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ocw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ocw-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/ocw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ocw-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ocw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ocw-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/version.svg)](https://anaconda.org/conda-forge/ocw)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/downloads.svg)](https://anaconda.org/conda-forge/ocw)
+
 Installing ocw
 ==============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `ocw` available on your platform w
 ```
 conda search ocw --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ocw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ocw-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ocw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ocw-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ocw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ocw-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/version.svg)](https://anaconda.org/conda-forge/ocw)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/downloads.svg)](https://anaconda.org/conda-forge/ocw)
 
 
 Updating ocw-feedstock
