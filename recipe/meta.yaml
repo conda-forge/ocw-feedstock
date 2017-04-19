@@ -32,7 +32,7 @@ requirements:
     - python-dateutil
     - myproxyclient  # [not py3k]
     - esgf-pyclient  # [not py3k]
-    - podaacpy >= 1.9.0
+    - podaacpy >=1.9.0
 
 test:
   imports:
