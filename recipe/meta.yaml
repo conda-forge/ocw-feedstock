@@ -1,6 +1,6 @@
 {% set name = "ocw" %}
 {% set version = "1.2.0" %}
-{% set sha256 = "134497701503e38f48c677ce37f06f29b0a3372faafaba0d0810c7ba38d10d96" %}
+{% set sha256 = "00d2509077825161a884835c32e06ffaced7faeee16fcc0329510d1518065c63" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/apache/climate/archive/master.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -53,3 +53,4 @@ extra:
   recipe-maintainers:
     - agoodm
     - jarifibrahim
+    - lewismc
