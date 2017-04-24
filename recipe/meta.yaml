@@ -1,6 +1,6 @@
 {% set name = "ocw" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "8f12405ec02ea327b1e0cf65547e409232f67577be6eb348d2ea9011827e2c4a" %}
+{% set version = "1.2.0" %}
+{% set sha256 = "00d2509077825161a884835c32e06ffaced7faeee16fcc0329510d1518065c63" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: True  # [py3k]
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -33,8 +33,7 @@ requirements:
     - python-dateutil
     - myproxyclient
     - esgf-pyclient
-    # Will need this later for the 1.2.0 release, leaving commended for now
-    # - podaacpy >= 1.4.0
+    - podaacpy
 
 test:
   imports:
@@ -57,3 +56,4 @@ extra:
   recipe-maintainers:
     - agoodm
     - jarifibrahim
+    - lewismc
