@@ -10,8 +10,8 @@ All of the options shown in the run screen work after applying this fix.
 
 diff --git a/RCMES/cli_app.py b/RCMES/cli_app.py
 index 58e8cb2..0616571 100644
---- a/RCMES/cli_app.py
-+++ b/RCMES/cli_app.py
+--- RCMES/cli_app.py
++++ RCMES/cli_app.py
 @@ -1185,8 +1185,6 @@ def settings_screen(header):
           screen.addstr(11, x/2, "6 - Change Target dataset/s")
           screen.addstr(12, x/2, "7 - Change Metric")
@@ -69,8 +69,8 @@ Subject: [PATCH 2/4] CLIMATE-914 - Update dataset_processor.spatial_regrid
 
 diff --git a/ocw/dataset_processor.py b/ocw/dataset_processor.py
 index 917419e..2097cc4 100755
---- a/ocw/dataset_processor.py
-+++ b/ocw/dataset_processor.py
+--- ocw/dataset_processor.py
++++ ocw/dataset_processor.py
 @@ -21,7 +21,7 @@ import ocw.utils as utils
  import datetime
  import numpy as np
@@ -218,8 +218,8 @@ Subject: [PATCH 3/4] the unreasonable reshaping of latitude and longitude was
 
 diff --git a/ocw/tests/test_dataset_processor.py b/ocw/tests/test_dataset_processor.py
 index 32fa42d..27af951 100644
---- a/ocw/tests/test_dataset_processor.py
-+++ b/ocw/tests/test_dataset_processor.py
+--- ocw/tests/test_dataset_processor.py
++++ ocw/tests/test_dataset_processor.py
 @@ -391,10 +391,8 @@ class TestSpatialRegrid(unittest.TestCase):
                            self.regridded_dataset.variable)
  
@@ -252,8 +252,8 @@ Subject: [PATCH 4/4] CLIMATE-915 - Updates for the NARCCAP example
 
 diff --git a/RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml b/RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml
 index 83a2e32..11410a2 100644
---- a/RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml
-+++ b/RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml
+--- RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml
++++ RCMES/configuration_files/NARCCAP_examples/Fig14_and_Fig15.yaml
 @@ -22,9 +22,11 @@ regrid:
      regrid_dlat: 0.50
      regrid_dlon: 0.50
@@ -269,8 +269,8 @@ index 83a2e32..11410a2 100644
  
 diff --git a/RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml b/RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml
 index dca3c00..05cda15 100644
---- a/RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml
-+++ b/RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml
+--- RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml
++++ RCMES/configuration_files/NARCCAP_examples/Fig16_summer.yaml
 @@ -21,10 +21,11 @@ regrid:
      regrid_on_reference: False
      regrid_dlat: 0.50
@@ -287,8 +287,8 @@ index dca3c00..05cda15 100644
  
 diff --git a/RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml b/RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml
 index d6e647f..622bbe3 100644
---- a/RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml
-+++ b/RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml
+--- RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml
++++ RCMES/configuration_files/NARCCAP_examples/Fig16_winter.yaml
 @@ -22,9 +22,11 @@ regrid:
      regrid_dlat: 0.50
      regrid_dlon: 0.50
