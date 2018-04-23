@@ -14,14 +14,16 @@ Summary: A library for simplifying the process of climate model evaluation.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ocw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ocw-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ocw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ocw-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ocw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ocw-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ocw-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ocw-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/ocw-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ocw-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ocw-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ocw-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/version.svg)](https://anaconda.org/conda-forge/ocw)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ocw/badges/downloads.svg)](https://anaconda.org/conda-forge/ocw)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ocw-green.svg)](https://anaconda.org/conda-forge/ocw) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ocw.svg)](https://anaconda.org/conda-forge/ocw) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ocw.svg)](https://anaconda.org/conda-forge/ocw) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ocw.svg)](https://anaconda.org/conda-forge/ocw) |
 
 Installing ocw
 ==============
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
