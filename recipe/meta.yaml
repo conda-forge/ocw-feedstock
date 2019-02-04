@@ -16,11 +16,11 @@ build:
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  host:
-    - pip
   build:
     - python
     - setuptools
+  host:
+    - pip
   run:
     - python
     - numpy
