@@ -1,26 +1,25 @@
 {% set name = "ocw" %}
 {% set version = "1.3.0" %}
-{% set sha256 = "bbf80c3effb2e3c352e8f010c2a40f628bc817b157cd5f0939e9bf6d42dbd3a5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: bbf80c3effb2e3c352e8f010c2a40f628bc817b157cd5f0939e9bf6d42dbd3a5
 
 build:
   number: 3
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
-    - setuptools
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - numpy
     - scipy
     - matplotlib-base
@@ -30,8 +29,6 @@ requirements:
     - bottle
     - pydap
     - python-dateutil
-    - myproxyclient  # [not py3k]
-    - esgf-pyclient  # [not py3k]
     - podaacpy
 
 test:
@@ -39,10 +36,14 @@ test:
     - ocw
     - ocw.data_source
     - ocw.esgf
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://climate.apache.org/
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE.txt
   license_family: Apache
   summary: 'A library for simplifying the process of climate model evaluation.'
